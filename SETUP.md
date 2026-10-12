@@ -2,8 +2,8 @@
 
 Until steps 1–3 are done (after step 0), the site runs in **demo mode** with sample data.
 
-- Public site: https://laiwong22.github.io/foothill_communications-/
-- Admin site: https://laiwong22.github.io/foothill_communications-/admin/
+- Public site: https://laiwong22.github.io/foothill_communications/
+- Admin site: https://laiwong22.github.io/foothill_communications/admin/
 
 ```
  Phone ──text──▶ Twilio ──webhook──▶ Supabase functions ──▶ Supabase database
@@ -33,7 +33,7 @@ minute later the site is live at the addresses above.
    Put them in `config.js`, or send them to Claude. Both are safe to make public.
    Do **not** use the `service_role` key here.
 4. Go to **Authentication → URL Configuration**:
-   - Site URL: `https://laiwong22.github.io/foothill_communications-/admin/`
+   - Site URL: `https://laiwong22.github.io/foothill_communications/admin/`
    - Redirect URLs: add the same address.
 
 ## 2. Make yourself the owner
@@ -65,12 +65,12 @@ Start this now: carrier approval is the slowest part of the three-week timeline.
 4. **Submit verification** (toll-free: Phone Numbers → Regulatory → Toll-free verification).
    Use these answers:
    - Business/organization: Foothill YSA (young single adult congregation), a volunteer
-     church group. Website: `https://laiwong22.github.io/foothill_communications-/`
+     church group. Website: `https://laiwong22.github.io/foothill_communications/`
    - Use case: *Group announcements / community notifications*. Volume: under 10,000/month.
    - Description: "Announcements and event reminders for members of the Foothill YSA church
      congregation who sign up. About 2–3 messages per week."
    - How people opt in: "Users enter their name and number on
-     https://laiwong22.github.io/foothill_communications-/#join, check the groups they
+     https://laiwong22.github.io/foothill_communications/#join, check the groups they
      want and agree to the disclosure, then confirm by replying JOIN to our confirmation text.
      Users can also text JOIN to the number. Reply STOP to opt out."
    - Opt-in proof: a screenshot of the Get texts page.
@@ -106,7 +106,7 @@ The five functions live in `supabase/functions/`.
 | `TWILIO_ACCOUNT_SID` | from Twilio (starts `AC`) |
 | `TWILIO_AUTH_TOKEN` | from Twilio |
 | `TWILIO_MESSAGING_SERVICE_SID` | from step 3 (starts `MG`) |
-| `SITE_URL` | `https://laiwong22.github.io/foothill_communications-` |
+| `SITE_URL` | `https://laiwong22.github.io/foothill_communications` |
 | `CRON_SECRET` | any long random password you make up (also used in step 6) |
 | `WARD_NAME` | `Foothill YSA` (optional) |
 | `DRY_RUN` | `true` to test without sending real texts; delete it to go live |

@@ -1,6 +1,6 @@
-# foothill_communications- — Foothill YSA (FYSAA) ward texting + announcements
+# foothill_communications — Foothill YSA (FYSAA) ward texting + announcements
 
-Static site on GitHub Pages (repo root, no build step; https://laiwong22.github.io/foothill_communications-/) backed by **Supabase** (Postgres,
+Static site on GitHub Pages (repo root, no build step; https://laiwong22.github.io/foothill_communications/) backed by **Supabase** (Postgres,
 email-link logins, Deno edge functions) and **Twilio** (SMS). Setup steps: `SETUP.md`.
 
 - Public: `index.html` (Announcements / Calendar / Get texts) and `u.html?t=TOKEN` (manage/unsubscribe).
