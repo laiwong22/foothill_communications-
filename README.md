@@ -9,3 +9,6 @@ Ward announcements by text, plus a public news and calendar site for the Foothil
 - `supabase/`: database schema and edge functions (Twilio texting)
 
 Setup: see [SETUP.md](SETUP.md). Until it's connected, every page runs on sample data.
+
+
+Location for the files saved is here: G:\My Drive\Church\Foothill YSA Communications\Foothill YSA Communications Request (File responses)\Flyer or image link (File responses)
